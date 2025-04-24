@@ -40,7 +40,8 @@ and provides a unified, secure, and resilient endpoint for aggregated data.
 
 ### 1. Clone the Repository
 
-```bash
+```
+bash
 git clone https://github.com/your-user/integration-api-sample.git
 cd integration-api-sample
 ```
@@ -54,8 +55,8 @@ https://localhost:7269/swagger
 Use the following endpoint to generate a JWT:
 
 POST /api/Authorization/token
-```Request:
-
+Request:
+```
 {
   "username": "test",
   "password": "superstrongsecretkeywithatleast32chars"
@@ -63,7 +64,8 @@ POST /api/Authorization/token
 ```
 
 Get the response token value
-```{
+```
+{
   "token": "eyJhbGciOiJIUzI1NiIsInR5..."
 }
 ```
@@ -71,7 +73,8 @@ Get the response token value
 then use the value on swagger authorization
 
 ### Usage
-```GET /api/Aggregation
+```
+GET /api/Aggregation
 
 ?City=Athens&CountryCode=gr&Date=2025-04-24&Passengers=2
 ```
